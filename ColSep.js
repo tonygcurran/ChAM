@@ -3,20 +3,19 @@ function colsep(){
 rectMode(CENTER);
   imageMode(CORNER);
  
- 
   blendMode(BLEND);
   
 greenPlate();
  
 blendMode(MULTIPLY);
   
-   magentaplate();
+ magentaplate();
 redplate();
-//blendMode(BLEND);
-blueplate();
-  cyanplate();
-  yellowplate();
-  print(alp);
+ // blendMode(BLEND);
+  blueplate();
+cyanplate();
+ yellowplate();
+
 
   
  // blendMode(BLEND);
@@ -34,9 +33,7 @@ blueplate();
   
   }
   
-  if (ralpha[0] <= 10 || ralpha[0] >=220 || galpha[0] <= 10 || galpha[0] >=220 || balpha[0] <= 10 || balpha[0] >=220 || malpha[0] <= 10 || malpha[0] >=220 || calpha[0] <= 10 || calpha[0] >=220 || yalpha[0] <= 10 || yalpha[0] >=220) {
- 
-  }
+
   
   /*for (i = 0; i < ralpha.length; i++){
     
@@ -80,7 +77,7 @@ function redplate() {
  rgraphics.beginShape();
 
   for (i = 0; i < redWigs.length; i++) {
-    rgraphics.curveVertex(redWigs[i][0], redWigs[i][1]);
+ rgraphics.curveVertex(redWigs[i][0], redWigs[i][1]);
   }
   rgraphics.endShape();
 
@@ -101,24 +98,25 @@ function redplate() {
 
   rgraphics.stroke(255, ralpha[2], ralpha[2]);
   rgraphics.noFill();
- //rgraphics.blendMode(BLEND);
+ rgraphics.blendMode(BLEND);
  rgraphics.beginShape();
 
   for (i = 0; i < redWigs2.length; i++) {
-    rgraphics.curveVertex(redWigs2[i][0], redWigs2[i][1]);
+  rgraphics.curveVertex(redWigs2[i][0], redWigs2[i][1]);
   }
   rgraphics.endShape();
 
 
   for (i = 0; i < redWigs2.length; i++) {
     for (j = 0; j < redWigs2[i].length; j++){
-    redWigs2[i][j] += random(-flux, flux);
-             if (redWigs2[i][0] > width-st[1] || redWigs2[i][0] < rxbound+st[1]) {
+    redWigs2[i][j] += random(-jita, jita);
+            if (redWigs2[i][0] > width-st[1] || redWigs2[i][0] < rxbound+st[1]) {
         redWigs2[i][0] = random(rxbound, width);
       }
       if (redWigs2[i][1] > height-st[1]|| redWigs2[i][1] < 0+st[1]){
-        redWigs2[i][1] = random(rybound, height);
+        redWigs2[i][1] = random(height);
       }
+      
       }
   }
   
@@ -332,7 +330,7 @@ function cyanplate() {
     for (j = 0; j < cyanWigs[i].length; j++){
     cyanWigs[i][j] += random(-jita, jita);
              if (cyanWigs[i][0] > cbound-st[0] || cyanWigs[i][0] < 0+st[0]) {
-        cyanWigs[i][0] = random(cbound);
+        cyanWigs[i][0] = random(width);
       }
       if (cyanWigs[i][1] > height-st[0]|| cyanWigs[i][1] < 0+st[0]){
         cyanWigs[i][1] = random(height);
@@ -357,7 +355,7 @@ function cyanplate() {
     for (j = 0; j < cyanWigs2[i].length; j++){
     cyanWigs2[i][j] += random(-jita, jita);
              if (cyanWigs2[i][0] > width-st[1] || cyanWigs2[i][0] < cbound+st[1]) {
-        cyanWigs2[i][0] = random(cbound, width);
+        cyanWigs2[i][0] = random(width);
       }
       if (cyanWigs2[i][1] > height-st[1]|| cyanWigs2[i][1] < 0+st[1]){
         cyanWigs2[i][1] = random(height);
@@ -416,7 +414,7 @@ function magentaplate() {
     for (j = 0; j < magentaWigs[i].length; j++){
     magentaWigs[i][j] += random(-jita, jita);
              if (magentaWigs[i][0] > mbound-st[0] || magentaWigs[i][0] < 0+st[0]) {
-        magentaWigs[i][0] = random(mbound);
+        magentaWigs[i][0] = random(width);
       }
       if (magentaWigs[i][1] > height-st[0]|| magentaWigs[i][1] < 0+st[0]){
         magentaWigs[i][1] = random(height);
@@ -441,7 +439,7 @@ function magentaplate() {
     for (j = 0; j < magentaWigs2[i].length; j++){
     magentaWigs2[i][j] += random(-jita, jita);
              if (magentaWigs2[i][0] > width-st[1] || magentaWigs2[i][0] < mbound+st[1]) {
-        magentaWigs2[i][0] = random(mbound, width);
+        magentaWigs2[i][0] = random(width);
       }
       if (magentaWigs2[i][1] > height-st[1]|| magentaWigs2[i][1] < 0+st[1]){
         magentaWigs2[i][1] = random(height);
@@ -490,7 +488,7 @@ function yellowplate() {
  ygraphics.beginShape();
 
   for (i = 0; i < yellowWigs.length; i++) {
-    ygraphics.curveVertex(yellowWigs[i][0], yellowWigs[i][1]);
+   ygraphics.curveVertex(yellowWigs[i][0], yellowWigs[i][1]);
   }
   ygraphics.endShape();
 
@@ -500,10 +498,9 @@ function yellowplate() {
     yellowWigs[i][j] += random(-jita, jita);
              if (yellowWigs[i][0] > ybound-st[0] || yellowWigs[i][0] < 0+st[0]) {
               
-        yellowWigs[i][0] = random(ybound);
+        yellowWigs[i][0] = random(width);
       }
       if (yellowWigs[i][1] > height-st[0]|| yellowWigs[i][1] < 0+st[0]){
-      
         yellowWigs[i][1] = random(height);
       }
       }
@@ -517,7 +514,7 @@ function yellowplate() {
  ygraphics.beginShape();
 
   for (i = 0; i < yellowWigs2.length; i++) {
-    mgraphics.curveVertex(yellowWigs2[i][0], yellowWigs2[i][1]);
+    ygraphics.curveVertex(yellowWigs2[i][0], yellowWigs2[i][1]);
   }
   ygraphics.endShape();
 
@@ -527,7 +524,7 @@ function yellowplate() {
     yellowWigs2[i][j] += random(-jita, jita);
              if (yellowWigs2[i][0] > width-st[1] || yellowWigs2[i][0] < ybound+st[1]) {
                 
-        yellowWigs2[i][0] = random(ybound, width);
+        yellowWigs2[i][0] = random(width);
       }
       if (yellowWigs2[i][1] > height-st[1]|| yellowWigs2[i][1] < 0+st[1]){
           
@@ -585,7 +582,7 @@ gnum = round(random(4,7));
   
     x = random(5, height / 4);
   y = random(5, height / 4);
-    jita = 2;
+    jita = 1;
 
      for (i = 0; i < 3; i++) {
    // greenWigs[i] = [int(random(width)), int(random(height))];
