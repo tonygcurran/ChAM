@@ -3,6 +3,7 @@ function colsep(){
 rectMode(CENTER);
   imageMode(CORNER);
  
+ 
   blendMode(BLEND);
   
 greenPlate();
@@ -584,7 +585,7 @@ gnum = round(random(4,7));
   
     x = random(5, height / 4);
   y = random(5, height / 4);
-    jita = 1;
+    jita = 2;
 
      for (i = 0; i < 3; i++) {
    // greenWigs[i] = [int(random(width)), int(random(height))];
