@@ -1,7 +1,7 @@
 function colsep(){
  // graphics.background(0);
  
- if (hr == 2 && sec == 0){
+ if (hr == 14 && sec == 0){
   colsepsetup();
  }
 rectMode(CENTER);
