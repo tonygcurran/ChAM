@@ -4,6 +4,7 @@ function colsep(){
  if (hr == 14 && sec == 0){
   colsepsetup();
  }
+ 
 rectMode(CENTER);
   imageMode(CORNER);
  
