@@ -79,6 +79,8 @@ var m;
 var y;
 let min;
 let s;
+let hr;
+let sec;
 
 let bst = [], bxbeg = [], bybeg = [], bxmid = [], bymid = [], bxend = [], byend = [], gst = [], gxbeg = [], gybeg = [], gxmid = [], gymid = [], gxend = [], gyend = [], rst = [], rxbeg = [], rybeg = [], rxmid = [], rymid = [], rxend = [], ryend = [], cst = [], cxbeg = [], cybeg = [], cxmid = [], cymid = [], cxend = [], cyend = [], yst = [], yxbeg = [], yybeg = [], yxmid = [], yymid = [], yxend = [], yyend = [], mst = [], mxbeg = [], mybeg = [], mxmid = [], mymid = [], mxend = [], myend = [], alpha = [];
 
