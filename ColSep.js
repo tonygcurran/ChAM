@@ -16,7 +16,9 @@ redplate();
 cyanplate();
  yellowplate();
 
-
+hr = hour();
+ min = minute();
+ sec = second();
   
  // blendMode(BLEND);
   //print(galpha[2]);
