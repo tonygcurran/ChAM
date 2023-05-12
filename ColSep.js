@@ -551,7 +551,9 @@ function yellowplate() {
   
 }
 function colsepsetup(){
-
+hr = hour();
+ min = minute();
+ sec = second();
   imageMode(CORNER);
   rxbound = random(width/2);
   rybound = random(height/2);
