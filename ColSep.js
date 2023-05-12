@@ -1,5 +1,9 @@
 function colsep(){
  // graphics.background(0);
+ 
+ if (hr = 2 = && min == 21 && sec = 0){
+  colseptsetup();
+ }
 rectMode(CENTER);
   imageMode(CORNER);
  
