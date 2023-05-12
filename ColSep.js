@@ -1,7 +1,7 @@
 function colsep(){
  // graphics.background(0);
  
- if (hr == 9 && min == 0 && sec == 0){
+ if (hr == 9 && min == 50 && sec == 0){
   colsepsetup();
  }
  
