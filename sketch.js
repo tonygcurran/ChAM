@@ -94,15 +94,15 @@ function setup() {
     
 
 
-  createCanvas(displayWidth, displayHeight);
-  graphics = createGraphics(displayWidth, displayHeight);
-  rgraphics = createGraphics(displayWidth, displayHeight);
-    bgraphics = createGraphics(displayWidth, displayHeight);
-    cgraphics = createGraphics(displayWidth, displayHeight);
-  mgraphics = createGraphics(displayWidth, displayHeight);
-    ygraphics = createGraphics(displayWidth, displayHeight);
+  createCanvas(windowWidth, windowHeight);
+  graphics = createGraphics(windowWidth, windowHeight);
+  rgraphics = createGraphics(windowWidth, windowHeight);
+    bgraphics = createGraphics(windowWidth, windowHeight);
+    cgraphics = createGraphics(windowWidth, windowHeight);
+  mgraphics = createGraphics(windowWidth, windowHeight);
+    ygraphics = createGraphics(windowWidth, windowHeight);
   
- ggraphics = createGraphics(displayWidth, displayHeight);
+ ggraphics = createGraphics(windowWidth, windowHeight);
 
 
  colsepsetup();
