@@ -150,3 +150,7 @@ function keyTyped() {
     setup();
   }
 }
+
+function windowResized() {
+  resizeCanvas(displayWidth, displayHeight);
+}
